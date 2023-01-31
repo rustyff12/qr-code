@@ -1,0 +1,96 @@
+/* ===================== */
+/* Custom properties */
+/* ===================== */
+
+:root {
+    /* --- Colors --- */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 85%);
+    --grayish-blue: hsl(212, 45%, 89%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    /* --- Font-sizes --- */
+    --fs-500: 1.25rem;
+    --fs-400: 0.9375rem;
+
+    
+}
+
+
+
+/* ===================== */
+        /* Reset */
+/* ===================== */
+* , 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+/* --- Reset margins --- */
+body, h1, h2, h3, h4, h5, h6,
+p,
+img {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+	font-weight: 400;
+}
+
+/* ===================== */
+       /* Main */
+/* ===================== */
+
+.body {
+    background: var(--grayish-blue);
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 1rem;
+    max-width: 20rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    
+}
+
+.container img {
+    border-radius: 15px;
+}
+
+.p-item {
+    padding: 1.5rem;
+}
+
+.p-bold {
+    font-size: var(--fs-500);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.p-light {
+    font-size: var(--fs-400);
+    font-weight: 200;
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 0 auto;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
