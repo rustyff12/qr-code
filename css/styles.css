@@ -6,7 +6,7 @@
     /* --- Colors --- */
     --white: hsl(0, 0%, 100%);
     --light-gray: hsl(212, 45%, 85%);
-    --grayish-blue: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(228, 45%, 44%);
     --dark-blue: hsl(218, 44%, 22%);
 
     /* --- Font-sizes --- */
@@ -44,17 +44,16 @@ p {
 /* ===================== */
 
 .body {
-    background: var(--grayish-blue);
+    background: var(--light-gray);
     font-family: 'Outfit', sans-serif;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container {
+main {
     padding: 1rem;
     max-width: 20rem;
     background: var(--white);
@@ -65,32 +64,32 @@ p {
     
 }
 
-.container img {
+main img {
     border-radius: 15px;
 }
 
-.p-item {
+.main-item {
     padding: 1.5rem;
 }
 
-.p-bold {
+h1 {
     font-size: var(--fs-500);
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.p-light {
+.main-item p {
     font-size: var(--fs-400);
     font-weight: 200;
     text-align: center;
 }
 
-.attribution { 
+footer { 
     font-size: 11px; 
     text-align: center; 
     margin: 0 auto;
 }
     
-.attribution a { 
+footer a { 
     color: hsl(228, 45%, 44%);
 }
